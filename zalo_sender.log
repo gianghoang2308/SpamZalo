@@ -1,0 +1,619 @@
+2026-10-28 21:21:19,575 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-28 21:23:10,285 [ERROR] Lỗi khi gửi 0328296951
+Traceback (most recent call last):
+  File "d:\ClaudeSpamZalo\sender.py", line 67, in run
+    client.send_message(phone, self.store.message(idx))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\ClaudeSpamZalo\zalo_client.py", line 63, in send_message
+    self._open_chat(phone)
+    ~~~~~~~~~~~~~~~^^^^^^^
+  File "d:\ClaudeSpamZalo\zalo_client.py", line 90, in _open_chat
+    target.click()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\sync_api\_generated.py", line 11021, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_sync_base.py", line 111, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_locator.py", line 174, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_frame.py", line 598, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div[class*=\"conv-item\"], div[class*=\"item-user\"], div[class*=\"list-item\"]").first
+    - locator resolved to <div class="gridv2 conv-item conv-rel pinned lv-2 fluid tiny grid-fluid-8">…</div>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="menu-item flx middle-flex clickable">…</div> from <div id="ContactTabV2" class="contact-tab-v2">…</div> subtree intercepts pointer events
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is visible, enabled and stable
+      - scrolling into view if needed
+      - done scrolling
+      - <div class="menu-item flx middle-flex clickable">…</div> from <div id="ContactTabV2" class="contact-tab-v2">…</div> subtree intercepts pointer events
+    - retrying click action
+      - waiting 100ms
+    56 × waiting for element to be visible, enabled and stable
+       - element is visible, enabled and stable
+       - scrolling into view if needed
+       - done scrolling
+       - <div class="menu-item flx middle-flex clickable">…</div> from <div id="ContactTabV2" class="contact-tab-v2">…</div> subtree intercepts pointer events
+     - retrying click action
+       - waiting 500ms
+
+2026-10-28 21:23:44,587 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-28 21:27:28,893 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-28 21:31:48,635 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-28 21:33:17,768 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-28 21:39:18,643 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-28 23:32:59,220 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-28 23:40:16,846 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:40:16,851 [ERROR] Lỗi khi gửi 0328296951
+Traceback (most recent call last):
+  File "D:\ClaudeSpamZalo\sender.py", line 74, in run
+    client.send_message(phone, self.store.message(idx))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ClaudeSpamZalo\zalo_client.py", line 64, in send_message
+    self._type_and_send(message)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\ClaudeSpamZalo\zalo_client.py", line 98, in _type_and_send
+    box.click()
+    ~~~~~~~~~^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\sync_api\_generated.py", line 11021, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_sync_base.py", line 111, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_locator.py", line 174, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_frame.py", line 598, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div[contenteditable=\"true\"]").last
+
+2026-10-28 23:40:17,791 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:40:47,388 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:40:47,390 [INFO] OK  0328296951
+2026-10-28 23:40:48,094 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:47:26,807 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:47:26,813 [ERROR] Lỗi khi gửi 0328296951
+Traceback (most recent call last):
+  File "D:\ClaudeSpamZalo\sender.py", line 74, in run
+    client.send_message(phone, self.store.message(idx))
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ClaudeSpamZalo\zalo_client.py", line 64, in send_message
+    self._type_and_send(message)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\ClaudeSpamZalo\zalo_client.py", line 98, in _type_and_send
+    box.click()
+    ~~~~~~~~~^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\sync_api\_generated.py", line 11021, in click
+    self._sync(
+    ~~~~~~~~~~^
+        self._impl_obj.click(
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+        )
+        ^
+    )
+    ^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_sync_base.py", line 111, in _sync
+    return task.result()
+           ~~~~~~~~~~~^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_locator.py", line 174, in click
+    return await self._frame._click(self._selector, strict=True, **params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_frame.py", line 598, in _click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_connection.py", line 78, in send
+    return await self._connection.wrap_api_call(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\Users\GiangNguyen\AppData\Roaming\Python\Python313\site-packages\playwright\_impl\_connection.py", line 636, in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("div[contenteditable=\"true\"]").last
+
+2026-10-28 23:47:28,135 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:47:53,941 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:47:53,942 [INFO] OK  0328296951
+2026-10-28 23:47:54,549 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:49:41,763 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:49:41,766 [INFO] OK  0328296951
+2026-10-28 23:49:47,062 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:56:39,849 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:56:39,852 [INFO] OK  0328296951
+2026-10-28 23:56:40,942 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:58:16,162 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-28 23:58:16,164 [INFO] OK  0328296951
+2026-10-28 23:58:16,777 [WARNING] Không lưu được C:\Users\GiangNguyen\Desktop\Thông tin khách hàng.xlsx (file đang mở trong Excel?)
+2026-10-29 20:32:24,702 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-29 21:35:33,607 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-29 21:47:15,215 [INFO] OK  0965422994
+2026-10-29 21:47:54,304 [INFO] OK  0349770424
+2026-10-29 21:48:43,376 [INFO] OK  0965422994
+2026-10-29 21:49:22,965 [INFO] OK  0349770424
+2026-10-29 21:58:43,694 [INFO] OK  0965422994
+2026-10-29 21:59:08,372 [INFO] OK  0349770424
+2026-10-29 21:59:31,929 [INFO] OK  0971785593
+2026-10-29 21:59:56,740 [INFO] OK  0395504084
+2026-10-29 22:05:56,751 [INFO] OK  0965422994
+2026-10-29 22:06:20,058 [INFO] OK  0349770424
+2026-10-29 22:06:45,526 [INFO] OK  0971785593
+2026-10-29 22:07:11,981 [INFO] OK  0395504084
+2026-10-29 22:18:33,925 [INFO] OK  0965422994
+2026-10-29 22:18:59,137 [INFO] OK  0349770424
+2026-10-29 22:19:15,059 [INFO] Đủ 2 tin/giờ, chờ 3558 giây
+2026-10-29 22:19:16,262 [INFO] Đủ 2 tin/giờ, chờ 3557 giây
+2026-10-29 22:19:17,464 [INFO] Đủ 2 tin/giờ, chờ 3556 giây
+2026-10-29 22:19:18,666 [INFO] Đủ 2 tin/giờ, chờ 3555 giây
+2026-10-29 22:19:19,869 [INFO] Đủ 2 tin/giờ, chờ 3554 giây
+2026-10-29 22:19:21,071 [INFO] Đủ 2 tin/giờ, chờ 3552 giây
+2026-10-29 22:19:22,273 [INFO] Đủ 2 tin/giờ, chờ 3551 giây
+2026-10-29 22:19:23,477 [INFO] Đủ 2 tin/giờ, chờ 3550 giây
+2026-10-29 22:19:24,679 [INFO] Đủ 2 tin/giờ, chờ 3549 giây
+2026-10-29 22:19:25,881 [INFO] Đủ 2 tin/giờ, chờ 3548 giây
+2026-10-29 22:19:27,083 [INFO] Đủ 2 tin/giờ, chờ 3546 giây
+2026-10-29 22:19:28,286 [INFO] Đủ 2 tin/giờ, chờ 3545 giây
+2026-10-29 22:19:29,487 [INFO] Đủ 2 tin/giờ, chờ 3544 giây
+2026-10-29 22:19:30,690 [INFO] Đủ 2 tin/giờ, chờ 3543 giây
+2026-10-29 22:19:31,892 [INFO] Đủ 2 tin/giờ, chờ 3542 giây
+2026-10-29 22:19:33,095 [INFO] Đủ 2 tin/giờ, chờ 3540 giây
+2026-10-29 22:19:34,297 [INFO] Đủ 2 tin/giờ, chờ 3539 giây
+2026-10-29 22:19:35,499 [INFO] Đủ 2 tin/giờ, chờ 3538 giây
+2026-10-29 22:19:36,701 [INFO] Đủ 2 tin/giờ, chờ 3537 giây
+2026-10-29 22:19:37,904 [INFO] Đủ 2 tin/giờ, chờ 3536 giây
+2026-10-29 22:19:39,106 [INFO] Đủ 2 tin/giờ, chờ 3534 giây
+2026-10-29 22:19:40,308 [INFO] Đủ 2 tin/giờ, chờ 3533 giây
+2026-10-29 22:19:41,510 [INFO] Đủ 2 tin/giờ, chờ 3532 giây
+2026-10-29 22:19:42,712 [INFO] Đủ 2 tin/giờ, chờ 3531 giây
+2026-10-29 22:19:43,915 [INFO] Đủ 2 tin/giờ, chờ 3530 giây
+2026-10-29 22:19:45,118 [INFO] Đủ 2 tin/giờ, chờ 3528 giây
+2026-10-29 22:19:46,322 [INFO] Đủ 2 tin/giờ, chờ 3527 giây
+2026-10-29 22:19:47,523 [INFO] Đủ 2 tin/giờ, chờ 3526 giây
+2026-10-29 22:19:48,725 [INFO] Đủ 2 tin/giờ, chờ 3525 giây
+2026-10-29 22:19:49,927 [INFO] Đủ 2 tin/giờ, chờ 3523 giây
+2026-10-29 22:19:51,130 [INFO] Đủ 2 tin/giờ, chờ 3522 giây
+2026-10-29 22:19:52,332 [INFO] Đủ 2 tin/giờ, chờ 3521 giây
+2026-10-29 22:19:53,534 [INFO] Đủ 2 tin/giờ, chờ 3520 giây
+2026-10-29 22:19:54,763 [INFO] Đủ 2 tin/giờ, chờ 3519 giây
+2026-10-29 22:19:55,964 [INFO] Đủ 2 tin/giờ, chờ 3517 giây
+2026-10-29 22:19:57,168 [INFO] Đủ 2 tin/giờ, chờ 3516 giây
+2026-10-29 22:19:58,371 [INFO] Đủ 2 tin/giờ, chờ 3515 giây
+2026-10-29 22:19:59,574 [INFO] Đủ 2 tin/giờ, chờ 3514 giây
+2026-10-29 22:20:00,776 [INFO] Đủ 2 tin/giờ, chờ 3513 giây
+2026-10-29 22:20:01,979 [INFO] Đủ 2 tin/giờ, chờ 3511 giây
+2026-10-29 22:20:03,181 [INFO] Đủ 2 tin/giờ, chờ 3510 giây
+2026-10-29 22:20:04,383 [INFO] Đủ 2 tin/giờ, chờ 3509 giây
+2026-10-29 22:20:05,421 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-29 22:20:05,586 [INFO] Đủ 2 tin/giờ, chờ 3508 giây
+2026-10-29 22:20:06,805 [INFO] Đủ 2 tin/giờ, chờ 3507 giây
+2026-10-29 22:20:08,007 [INFO] Đủ 2 tin/giờ, chờ 3505 giây
+2026-10-29 22:20:09,210 [INFO] Đủ 2 tin/giờ, chờ 3504 giây
+2026-10-29 22:20:10,412 [INFO] Đủ 2 tin/giờ, chờ 3503 giây
+2026-10-29 22:20:11,613 [INFO] Đủ 2 tin/giờ, chờ 3502 giây
+2026-10-29 22:20:12,815 [INFO] Đủ 2 tin/giờ, chờ 3501 giây
+2026-10-29 22:20:14,018 [INFO] Đủ 2 tin/giờ, chờ 3499 giây
+2026-10-29 22:20:15,220 [INFO] Đủ 2 tin/giờ, chờ 3498 giây
+2026-10-29 22:20:16,422 [INFO] Đủ 2 tin/giờ, chờ 3497 giây
+2026-10-29 22:20:17,627 [INFO] Đủ 2 tin/giờ, chờ 3496 giây
+2026-10-29 22:20:18,830 [INFO] Đủ 2 tin/giờ, chờ 3495 giây
+2026-10-29 22:20:20,034 [INFO] Đủ 2 tin/giờ, chờ 3493 giây
+2026-10-29 22:20:21,236 [INFO] Đủ 2 tin/giờ, chờ 3492 giây
+2026-10-29 22:20:22,438 [INFO] Đủ 2 tin/giờ, chờ 3491 giây
+2026-10-29 22:20:23,640 [INFO] Đủ 2 tin/giờ, chờ 3490 giây
+2026-10-29 22:20:24,230 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-29 22:20:24,846 [INFO] Đủ 2 tin/giờ, chờ 3489 giây
+2026-10-29 22:20:26,048 [INFO] Đủ 2 tin/giờ, chờ 3487 giây
+2026-10-29 22:20:27,252 [INFO] Đủ 2 tin/giờ, chờ 3486 giây
+2026-10-29 22:20:28,457 [INFO] Đủ 2 tin/giờ, chờ 3485 giây
+2026-10-29 22:20:29,661 [INFO] Đủ 2 tin/giờ, chờ 3484 giây
+2026-10-29 22:20:30,863 [INFO] Đủ 2 tin/giờ, chờ 3483 giây
+2026-10-29 22:20:32,065 [INFO] Đủ 2 tin/giờ, chờ 3481 giây
+2026-10-29 22:20:33,267 [INFO] Đủ 2 tin/giờ, chờ 3480 giây
+2026-10-29 22:20:34,472 [INFO] Đủ 2 tin/giờ, chờ 3479 giây
+2026-10-29 22:20:35,674 [INFO] Đủ 2 tin/giờ, chờ 3478 giây
+2026-10-29 22:20:36,876 [INFO] Đủ 2 tin/giờ, chờ 3477 giây
+2026-10-29 22:20:38,078 [INFO] Đủ 2 tin/giờ, chờ 3475 giây
+2026-10-29 22:20:39,281 [INFO] Đủ 2 tin/giờ, chờ 3474 giây
+2026-10-29 22:20:40,483 [INFO] Đủ 2 tin/giờ, chờ 3473 giây
+2026-10-29 22:20:41,685 [INFO] Đủ 2 tin/giờ, chờ 3472 giây
+2026-10-29 22:20:42,887 [INFO] Đủ 2 tin/giờ, chờ 3471 giây
+2026-10-29 22:20:44,089 [INFO] Đủ 2 tin/giờ, chờ 3469 giây
+2026-10-29 22:20:45,290 [INFO] Đủ 2 tin/giờ, chờ 3468 giây
+2026-10-29 22:20:46,492 [INFO] Đủ 2 tin/giờ, chờ 3467 giây
+2026-10-29 22:20:47,695 [INFO] Đủ 2 tin/giờ, chờ 3466 giây
+2026-10-29 22:20:48,897 [INFO] Đủ 2 tin/giờ, chờ 3465 giây
+2026-10-29 22:20:50,100 [INFO] Đủ 2 tin/giờ, chờ 3463 giây
+2026-10-29 22:20:51,302 [INFO] Đủ 2 tin/giờ, chờ 3462 giây
+2026-10-29 22:20:52,506 [INFO] Đủ 2 tin/giờ, chờ 3461 giây
+2026-10-29 22:20:53,708 [INFO] Đủ 2 tin/giờ, chờ 3460 giây
+2026-10-29 22:20:54,911 [INFO] Đủ 2 tin/giờ, chờ 3459 giây
+2026-10-29 22:20:56,113 [INFO] Đủ 2 tin/giờ, chờ 3457 giây
+2026-10-29 22:20:57,315 [INFO] Đủ 2 tin/giờ, chờ 3456 giây
+2026-10-29 22:20:58,518 [INFO] Đủ 2 tin/giờ, chờ 3455 giây
+2026-10-29 22:20:59,721 [INFO] Đủ 2 tin/giờ, chờ 3454 giây
+2026-10-29 22:21:00,922 [INFO] Đủ 2 tin/giờ, chờ 3453 giây
+2026-10-29 22:21:02,124 [INFO] Đủ 2 tin/giờ, chờ 3451 giây
+2026-10-29 22:21:03,326 [INFO] Đủ 2 tin/giờ, chờ 3450 giây
+2026-10-29 22:21:04,528 [INFO] Đủ 2 tin/giờ, chờ 3449 giây
+2026-10-29 22:21:05,729 [INFO] Đủ 2 tin/giờ, chờ 3448 giây
+2026-10-29 22:21:06,931 [INFO] Đủ 2 tin/giờ, chờ 3446 giây
+2026-10-29 22:21:08,133 [INFO] Đủ 2 tin/giờ, chờ 3445 giây
+2026-10-29 22:21:09,335 [INFO] Đủ 2 tin/giờ, chờ 3444 giây
+2026-10-29 22:21:10,537 [INFO] Đủ 2 tin/giờ, chờ 3443 giây
+2026-10-29 22:21:11,740 [INFO] Đủ 2 tin/giờ, chờ 3442 giây
+2026-10-29 22:21:12,942 [INFO] Đủ 2 tin/giờ, chờ 3440 giây
+2026-10-29 22:21:14,144 [INFO] Đủ 2 tin/giờ, chờ 3439 giây
+2026-10-29 22:21:15,346 [INFO] Đủ 2 tin/giờ, chờ 3438 giây
+2026-10-29 22:21:16,548 [INFO] Đủ 2 tin/giờ, chờ 3437 giây
+2026-10-29 22:21:17,750 [INFO] Đủ 2 tin/giờ, chờ 3436 giây
+2026-10-29 22:21:18,952 [INFO] Đủ 2 tin/giờ, chờ 3434 giây
+2026-10-29 22:21:20,155 [INFO] Đủ 2 tin/giờ, chờ 3433 giây
+2026-10-29 22:21:21,357 [INFO] Đủ 2 tin/giờ, chờ 3432 giây
+2026-10-29 22:21:22,559 [INFO] Đủ 2 tin/giờ, chờ 3431 giây
+2026-10-29 22:21:23,765 [INFO] Đủ 2 tin/giờ, chờ 3430 giây
+2026-10-29 22:21:24,967 [INFO] Đủ 2 tin/giờ, chờ 3428 giây
+2026-10-29 22:21:26,169 [INFO] Đủ 2 tin/giờ, chờ 3427 giây
+2026-10-29 22:21:27,372 [INFO] Đủ 2 tin/giờ, chờ 3426 giây
+2026-10-29 22:21:28,574 [INFO] Đủ 2 tin/giờ, chờ 3425 giây
+2026-10-29 22:21:29,777 [INFO] Đủ 2 tin/giờ, chờ 3424 giây
+2026-10-29 22:21:30,979 [INFO] Đủ 2 tin/giờ, chờ 3422 giây
+2026-10-29 22:21:32,182 [INFO] Đủ 2 tin/giờ, chờ 3421 giây
+2026-10-29 22:21:33,384 [INFO] Đủ 2 tin/giờ, chờ 3420 giây
+2026-10-29 22:21:34,586 [INFO] Đủ 2 tin/giờ, chờ 3419 giây
+2026-10-29 22:21:35,788 [INFO] Đủ 2 tin/giờ, chờ 3418 giây
+2026-10-29 22:21:36,990 [INFO] Đủ 2 tin/giờ, chờ 3416 giây
+2026-10-29 22:21:38,193 [INFO] Đủ 2 tin/giờ, chờ 3415 giây
+2026-10-29 22:21:39,396 [INFO] Đủ 2 tin/giờ, chờ 3414 giây
+2026-10-29 22:21:40,599 [INFO] Đủ 2 tin/giờ, chờ 3413 giây
+2026-10-29 22:21:41,800 [INFO] Đủ 2 tin/giờ, chờ 3412 giây
+2026-10-29 22:21:43,003 [INFO] Đủ 2 tin/giờ, chờ 3410 giây
+2026-10-29 22:21:44,205 [INFO] Đủ 2 tin/giờ, chờ 3409 giây
+2026-10-29 22:21:45,409 [INFO] Đủ 2 tin/giờ, chờ 3408 giây
+2026-10-29 22:21:46,612 [INFO] Đủ 2 tin/giờ, chờ 3407 giây
+2026-10-29 22:21:47,814 [INFO] Đủ 2 tin/giờ, chờ 3406 giây
+2026-10-29 22:21:49,018 [INFO] Đủ 2 tin/giờ, chờ 3404 giây
+2026-10-29 22:21:50,220 [INFO] Đủ 2 tin/giờ, chờ 3403 giây
+2026-10-29 22:21:51,422 [INFO] Đủ 2 tin/giờ, chờ 3402 giây
+2026-10-29 22:21:52,624 [INFO] Đủ 2 tin/giờ, chờ 3401 giây
+2026-10-29 22:21:53,827 [INFO] Đủ 2 tin/giờ, chờ 3400 giây
+2026-10-29 22:21:55,029 [INFO] Đủ 2 tin/giờ, chờ 3398 giây
+2026-10-29 22:21:56,231 [INFO] Đủ 2 tin/giờ, chờ 3397 giây
+2026-10-29 22:21:57,433 [INFO] Đủ 2 tin/giờ, chờ 3396 giây
+2026-10-29 22:21:58,635 [INFO] Đủ 2 tin/giờ, chờ 3395 giây
+2026-10-29 22:21:59,837 [INFO] Đủ 2 tin/giờ, chờ 3394 giây
+2026-10-29 22:22:01,039 [INFO] Đủ 2 tin/giờ, chờ 3392 giây
+2026-10-29 22:22:02,241 [INFO] Đủ 2 tin/giờ, chờ 3391 giây
+2026-10-29 22:22:03,443 [INFO] Đủ 2 tin/giờ, chờ 3390 giây
+2026-10-29 22:22:04,646 [INFO] Đủ 2 tin/giờ, chờ 3389 giây
+2026-10-29 22:22:05,848 [INFO] Đủ 2 tin/giờ, chờ 3388 giây
+2026-10-29 22:22:07,049 [INFO] Đủ 2 tin/giờ, chờ 3386 giây
+2026-10-29 22:22:08,252 [INFO] Đủ 2 tin/giờ, chờ 3385 giây
+2026-10-29 22:22:09,453 [INFO] Đủ 2 tin/giờ, chờ 3384 giây
+2026-10-29 22:22:10,655 [INFO] Đủ 2 tin/giờ, chờ 3383 giây
+2026-10-29 22:22:11,857 [INFO] Đủ 2 tin/giờ, chờ 3382 giây
+2026-10-29 22:22:13,059 [INFO] Đủ 2 tin/giờ, chờ 3380 giây
+2026-10-29 22:22:14,267 [INFO] Đủ 2 tin/giờ, chờ 3379 giây
+2026-10-29 22:22:15,470 [INFO] Đủ 2 tin/giờ, chờ 3378 giây
+2026-10-29 22:22:16,673 [INFO] Đủ 2 tin/giờ, chờ 3377 giây
+2026-10-29 22:22:17,875 [INFO] Đủ 2 tin/giờ, chờ 3376 giây
+2026-10-29 22:22:19,078 [INFO] Đủ 2 tin/giờ, chờ 3374 giây
+2026-10-29 22:22:20,280 [INFO] Đủ 2 tin/giờ, chờ 3373 giây
+2026-10-29 22:22:21,483 [INFO] Đủ 2 tin/giờ, chờ 3372 giây
+2026-10-29 22:22:22,686 [INFO] Đủ 2 tin/giờ, chờ 3371 giây
+2026-10-29 22:22:23,888 [INFO] Đủ 2 tin/giờ, chờ 3370 giây
+2026-10-29 22:22:25,090 [INFO] Đủ 2 tin/giờ, chờ 3368 giây
+2026-10-29 22:22:26,293 [INFO] Đủ 2 tin/giờ, chờ 3367 giây
+2026-10-29 22:22:27,495 [INFO] Đủ 2 tin/giờ, chờ 3366 giây
+2026-10-29 22:22:28,697 [INFO] Đủ 2 tin/giờ, chờ 3365 giây
+2026-10-29 22:22:29,900 [INFO] Đủ 2 tin/giờ, chờ 3364 giây
+2026-10-29 22:22:31,103 [INFO] Đủ 2 tin/giờ, chờ 3362 giây
+2026-10-29 22:22:32,305 [INFO] Đủ 2 tin/giờ, chờ 3361 giây
+2026-10-29 22:22:33,507 [INFO] Đủ 2 tin/giờ, chờ 3360 giây
+2026-10-29 22:22:34,709 [INFO] Đủ 2 tin/giờ, chờ 3359 giây
+2026-10-29 22:22:35,912 [INFO] Đủ 2 tin/giờ, chờ 3358 giây
+2026-10-29 22:22:37,115 [INFO] Đủ 2 tin/giờ, chờ 3356 giây
+2026-10-29 22:22:38,317 [INFO] Đủ 2 tin/giờ, chờ 3355 giây
+2026-10-29 22:22:39,519 [INFO] Đủ 2 tin/giờ, chờ 3354 giây
+2026-10-29 22:22:40,722 [INFO] Đủ 2 tin/giờ, chờ 3353 giây
+2026-10-29 22:22:41,924 [INFO] Đủ 2 tin/giờ, chờ 3351 giây
+2026-10-29 22:22:43,127 [INFO] Đủ 2 tin/giờ, chờ 3350 giây
+2026-10-29 22:22:44,331 [INFO] Đủ 2 tin/giờ, chờ 3349 giây
+2026-10-29 22:22:45,533 [INFO] Đủ 2 tin/giờ, chờ 3348 giây
+2026-10-29 22:22:46,736 [INFO] Đủ 2 tin/giờ, chờ 3347 giây
+2026-10-29 22:22:47,938 [INFO] Đủ 2 tin/giờ, chờ 3345 giây
+2026-10-29 22:22:49,140 [INFO] Đủ 2 tin/giờ, chờ 3344 giây
+2026-10-29 22:22:50,342 [INFO] Đủ 2 tin/giờ, chờ 3343 giây
+2026-10-29 22:22:51,545 [INFO] Đủ 2 tin/giờ, chờ 3342 giây
+2026-10-29 22:22:52,746 [INFO] Đủ 2 tin/giờ, chờ 3341 giây
+2026-10-29 22:22:53,949 [INFO] Đủ 2 tin/giờ, chờ 3339 giây
+2026-10-29 22:22:55,152 [INFO] Đủ 2 tin/giờ, chờ 3338 giây
+2026-10-29 22:22:56,355 [INFO] Đủ 2 tin/giờ, chờ 3337 giây
+2026-10-29 22:22:57,557 [INFO] Đủ 2 tin/giờ, chờ 3336 giây
+2026-10-29 22:22:58,760 [INFO] Đủ 2 tin/giờ, chờ 3335 giây
+2026-10-29 22:22:59,962 [INFO] Đủ 2 tin/giờ, chờ 3333 giây
+2026-10-29 22:23:01,165 [INFO] Đủ 2 tin/giờ, chờ 3332 giây
+2026-10-29 22:23:02,368 [INFO] Đủ 2 tin/giờ, chờ 3331 giây
+2026-10-29 22:23:03,570 [INFO] Đủ 2 tin/giờ, chờ 3330 giây
+2026-10-29 22:23:04,772 [INFO] Đủ 2 tin/giờ, chờ 3329 giây
+2026-10-29 22:23:05,974 [INFO] Đủ 2 tin/giờ, chờ 3327 giây
+2026-10-29 22:23:07,176 [INFO] Đủ 2 tin/giờ, chờ 3326 giây
+2026-10-29 22:23:08,378 [INFO] Đủ 2 tin/giờ, chờ 3325 giây
+2026-10-29 22:23:09,581 [INFO] Đủ 2 tin/giờ, chờ 3324 giây
+2026-10-29 22:23:10,783 [INFO] Đủ 2 tin/giờ, chờ 3323 giây
+2026-10-29 22:23:11,985 [INFO] Đủ 2 tin/giờ, chờ 3321 giây
+2026-10-29 22:23:13,187 [INFO] Đủ 2 tin/giờ, chờ 3320 giây
+2026-10-29 22:23:14,389 [INFO] Đủ 2 tin/giờ, chờ 3319 giây
+2026-10-29 22:23:15,592 [INFO] Đủ 2 tin/giờ, chờ 3318 giây
+2026-10-29 22:23:16,794 [INFO] Đủ 2 tin/giờ, chờ 3317 giây
+2026-10-29 22:23:17,995 [INFO] Đủ 2 tin/giờ, chờ 3315 giây
+2026-10-29 22:23:19,198 [INFO] Đủ 2 tin/giờ, chờ 3314 giây
+2026-10-29 22:23:20,399 [INFO] Đủ 2 tin/giờ, chờ 3313 giây
+2026-10-29 22:23:21,601 [INFO] Đủ 2 tin/giờ, chờ 3312 giây
+2026-10-29 22:23:22,803 [INFO] Đủ 2 tin/giờ, chờ 3311 giây
+2026-10-29 22:23:24,005 [INFO] Đủ 2 tin/giờ, chờ 3309 giây
+2026-10-29 22:23:25,208 [INFO] Đủ 2 tin/giờ, chờ 3308 giây
+2026-10-29 22:23:26,413 [INFO] Đủ 2 tin/giờ, chờ 3307 giây
+2026-10-29 22:23:27,615 [INFO] Đủ 2 tin/giờ, chờ 3306 giây
+2026-10-29 22:23:28,816 [INFO] Đủ 2 tin/giờ, chờ 3305 giây
+2026-10-29 22:23:30,019 [INFO] Đủ 2 tin/giờ, chờ 3303 giây
+2026-10-29 22:23:31,221 [INFO] Đủ 2 tin/giờ, chờ 3302 giây
+2026-10-29 22:23:32,423 [INFO] Đủ 2 tin/giờ, chờ 3301 giây
+2026-10-29 22:23:33,633 [INFO] Đủ 2 tin/giờ, chờ 3300 giây
+2026-10-29 22:23:34,836 [INFO] Đủ 2 tin/giờ, chờ 3299 giây
+2026-10-29 22:23:36,039 [INFO] Đủ 2 tin/giờ, chờ 3297 giây
+2026-10-29 22:23:37,241 [INFO] Đủ 2 tin/giờ, chờ 3296 giây
+2026-10-29 22:23:38,442 [INFO] Đủ 2 tin/giờ, chờ 3295 giây
+2026-10-29 22:23:39,644 [INFO] Đủ 2 tin/giờ, chờ 3294 giây
+2026-10-29 22:23:40,846 [INFO] Đủ 2 tin/giờ, chờ 3293 giây
+2026-10-29 22:23:42,048 [INFO] Đủ 2 tin/giờ, chờ 3291 giây
+2026-10-29 22:23:43,251 [INFO] Đủ 2 tin/giờ, chờ 3290 giây
+2026-10-29 22:23:44,453 [INFO] Đủ 2 tin/giờ, chờ 3289 giây
+2026-10-29 22:23:45,655 [INFO] Đủ 2 tin/giờ, chờ 3288 giây
+2026-10-29 22:23:46,859 [INFO] Đủ 2 tin/giờ, chờ 3287 giây
+2026-10-29 22:23:48,061 [INFO] Đủ 2 tin/giờ, chờ 3285 giây
+2026-10-29 22:23:49,264 [INFO] Đủ 2 tin/giờ, chờ 3284 giây
+2026-10-29 22:23:50,466 [INFO] Đủ 2 tin/giờ, chờ 3283 giây
+2026-10-29 22:23:51,668 [INFO] Đủ 2 tin/giờ, chờ 3282 giây
+2026-10-29 22:23:52,871 [INFO] Đủ 2 tin/giờ, chờ 3281 giây
+2026-10-29 22:23:54,073 [INFO] Đủ 2 tin/giờ, chờ 3279 giây
+2026-10-29 22:23:55,275 [INFO] Đủ 2 tin/giờ, chờ 3278 giây
+2026-10-29 22:23:56,476 [INFO] Đủ 2 tin/giờ, chờ 3277 giây
+2026-10-29 22:23:57,678 [INFO] Đủ 2 tin/giờ, chờ 3276 giây
+2026-10-29 22:23:58,880 [INFO] Đủ 2 tin/giờ, chờ 3275 giây
+2026-10-29 22:24:00,083 [INFO] Đủ 2 tin/giờ, chờ 3273 giây
+2026-10-29 22:24:01,285 [INFO] Đủ 2 tin/giờ, chờ 3272 giây
+2026-10-29 22:24:02,488 [INFO] Đủ 2 tin/giờ, chờ 3271 giây
+2026-10-29 22:24:03,690 [INFO] Đủ 2 tin/giờ, chờ 3270 giây
+2026-10-29 22:24:04,892 [INFO] Đủ 2 tin/giờ, chờ 3269 giây
+2026-10-29 22:24:06,094 [INFO] Đủ 2 tin/giờ, chờ 3267 giây
+2026-10-29 22:24:07,296 [INFO] Đủ 2 tin/giờ, chờ 3266 giây
+2026-10-29 22:24:08,499 [INFO] Đủ 2 tin/giờ, chờ 3265 giây
+2026-10-29 22:24:09,701 [INFO] Đủ 2 tin/giờ, chờ 3264 giây
+2026-10-29 22:24:10,903 [INFO] Đủ 2 tin/giờ, chờ 3263 giây
+2026-10-29 22:24:12,105 [INFO] Đủ 2 tin/giờ, chờ 3261 giây
+2026-10-29 22:24:13,307 [INFO] Đủ 2 tin/giờ, chờ 3260 giây
+2026-10-29 22:24:14,511 [INFO] Đủ 2 tin/giờ, chờ 3259 giây
+2026-10-29 22:24:15,714 [INFO] Đủ 2 tin/giờ, chờ 3258 giây
+2026-10-29 22:24:16,917 [INFO] Đủ 2 tin/giờ, chờ 3257 giây
+2026-10-29 22:24:18,119 [INFO] Đủ 2 tin/giờ, chờ 3255 giây
+2026-10-29 22:24:19,321 [INFO] Đủ 2 tin/giờ, chờ 3254 giây
+2026-10-29 22:24:20,523 [INFO] Đủ 2 tin/giờ, chờ 3253 giây
+2026-10-29 22:24:21,725 [INFO] Đủ 2 tin/giờ, chờ 3252 giây
+2026-10-29 22:24:22,927 [INFO] Đủ 2 tin/giờ, chờ 3250 giây
+2026-10-29 22:24:24,129 [INFO] Đủ 2 tin/giờ, chờ 3249 giây
+2026-10-29 22:24:25,332 [INFO] Đủ 2 tin/giờ, chờ 3248 giây
+2026-10-29 22:24:26,534 [INFO] Đủ 2 tin/giờ, chờ 3247 giây
+2026-10-29 22:24:27,736 [INFO] Đủ 2 tin/giờ, chờ 3246 giây
+2026-10-29 22:24:28,937 [INFO] Đủ 2 tin/giờ, chờ 3244 giây
+2026-10-29 22:24:30,139 [INFO] Đủ 2 tin/giờ, chờ 3243 giây
+2026-10-29 22:24:31,342 [INFO] Đủ 2 tin/giờ, chờ 3242 giây
+2026-10-29 22:24:32,543 [INFO] Đủ 2 tin/giờ, chờ 3241 giây
+2026-10-29 22:24:33,745 [INFO] Đủ 2 tin/giờ, chờ 3240 giây
+2026-10-29 22:24:34,948 [INFO] Đủ 2 tin/giờ, chờ 3238 giây
+2026-10-29 22:24:36,150 [INFO] Đủ 2 tin/giờ, chờ 3237 giây
+2026-10-29 22:24:37,352 [INFO] Đủ 2 tin/giờ, chờ 3236 giây
+2026-10-29 22:24:38,554 [INFO] Đủ 2 tin/giờ, chờ 3235 giây
+2026-10-29 22:24:39,756 [INFO] Đủ 2 tin/giờ, chờ 3234 giây
+2026-10-29 22:24:40,957 [INFO] Đủ 2 tin/giờ, chờ 3232 giây
+2026-10-29 22:24:42,160 [INFO] Đủ 2 tin/giờ, chờ 3231 giây
+2026-10-29 22:24:43,362 [INFO] Đủ 2 tin/giờ, chờ 3230 giây
+2026-10-29 22:24:44,564 [INFO] Đủ 2 tin/giờ, chờ 3229 giây
+2026-10-29 22:24:45,766 [INFO] Đủ 2 tin/giờ, chờ 3228 giây
+2026-10-29 22:24:46,969 [INFO] Đủ 2 tin/giờ, chờ 3226 giây
+2026-10-29 22:24:48,175 [INFO] Đủ 2 tin/giờ, chờ 3225 giây
+2026-10-29 22:24:49,377 [INFO] Đủ 2 tin/giờ, chờ 3224 giây
+2026-10-29 22:24:50,579 [INFO] Đủ 2 tin/giờ, chờ 3223 giây
+2026-10-29 22:24:51,782 [INFO] Đủ 2 tin/giờ, chờ 3222 giây
+2026-10-29 22:24:52,984 [INFO] Đủ 2 tin/giờ, chờ 3220 giây
+2026-10-29 22:24:54,186 [INFO] Đủ 2 tin/giờ, chờ 3219 giây
+2026-10-29 22:24:55,388 [INFO] Đủ 2 tin/giờ, chờ 3218 giây
+2026-10-29 22:24:56,590 [INFO] Đủ 2 tin/giờ, chờ 3217 giây
+2026-10-29 22:24:57,792 [INFO] Đủ 2 tin/giờ, chờ 3216 giây
+2026-10-29 22:24:58,993 [INFO] Đủ 2 tin/giờ, chờ 3214 giây
+2026-10-29 22:25:00,195 [INFO] Đủ 2 tin/giờ, chờ 3213 giây
+2026-10-29 22:25:01,397 [INFO] Đủ 2 tin/giờ, chờ 3212 giây
+2026-10-29 22:25:02,627 [INFO] Đủ 2 tin/giờ, chờ 3211 giây
+2026-10-29 22:25:03,829 [INFO] Đủ 2 tin/giờ, chờ 3210 giây
+2026-10-29 22:25:05,033 [INFO] Đủ 2 tin/giờ, chờ 3208 giây
+2026-10-29 22:25:06,235 [INFO] Đủ 2 tin/giờ, chờ 3207 giây
+2026-10-29 22:25:07,437 [INFO] Đủ 2 tin/giờ, chờ 3206 giây
+2026-10-29 22:25:08,641 [INFO] Đủ 2 tin/giờ, chờ 3205 giây
+2026-10-29 22:25:09,845 [INFO] Đủ 2 tin/giờ, chờ 3204 giây
+2026-10-29 22:25:11,047 [INFO] Đủ 2 tin/giờ, chờ 3202 giây
+2026-10-29 22:25:12,250 [INFO] Đủ 2 tin/giờ, chờ 3201 giây
+2026-10-29 22:25:13,452 [INFO] Đủ 2 tin/giờ, chờ 3200 giây
+2026-10-29 22:25:14,654 [INFO] Đủ 2 tin/giờ, chờ 3199 giây
+2026-10-29 22:25:15,856 [INFO] Đủ 2 tin/giờ, chờ 3198 giây
+2026-10-29 22:25:17,058 [INFO] Đủ 2 tin/giờ, chờ 3196 giây
+2026-10-29 22:25:18,260 [INFO] Đủ 2 tin/giờ, chờ 3195 giây
+2026-10-29 22:25:19,462 [INFO] Đủ 2 tin/giờ, chờ 3194 giây
+2026-10-29 22:25:20,664 [INFO] Đủ 2 tin/giờ, chờ 3193 giây
+2026-10-29 22:25:21,866 [INFO] Đủ 2 tin/giờ, chờ 3192 giây
+2026-10-29 22:25:23,068 [INFO] Đủ 2 tin/giờ, chờ 3190 giây
+2026-10-29 22:25:24,270 [INFO] Đủ 2 tin/giờ, chờ 3189 giây
+2026-10-29 22:25:25,473 [INFO] Đủ 2 tin/giờ, chờ 3188 giây
+2026-10-29 22:25:26,676 [INFO] Đủ 2 tin/giờ, chờ 3187 giây
+2026-10-29 22:25:27,878 [INFO] Đủ 2 tin/giờ, chờ 3186 giây
+2026-10-29 22:25:29,080 [INFO] Đủ 2 tin/giờ, chờ 3184 giây
+2026-10-29 22:25:30,283 [INFO] Đủ 2 tin/giờ, chờ 3183 giây
+2026-10-29 22:25:31,486 [INFO] Đủ 2 tin/giờ, chờ 3182 giây
+2026-10-29 22:32:40,677 [INFO] Chưa đăng nhập, chờ quét QR...
+2026-10-29 22:33:39,274 [INFO] Đủ 2 tin/giờ, chờ 2694 giây
+2026-10-29 22:33:40,507 [INFO] Đủ 2 tin/giờ, chờ 2693 giây
+2026-10-29 22:33:41,710 [INFO] Đủ 2 tin/giờ, chờ 2692 giây
+2026-10-29 22:33:42,930 [INFO] Đủ 2 tin/giờ, chờ 2690 giây
+2026-10-29 22:33:44,131 [INFO] Đủ 2 tin/giờ, chờ 2689 giây
+2026-10-29 22:33:45,333 [INFO] Đủ 2 tin/giờ, chờ 2688 giây
+2026-10-29 22:33:46,534 [INFO] Đủ 2 tin/giờ, chờ 2687 giây
+2026-10-29 22:33:47,735 [INFO] Đủ 2 tin/giờ, chờ 2686 giây
+2026-10-29 22:33:48,938 [INFO] Đủ 2 tin/giờ, chờ 2684 giây
+2026-10-29 22:33:50,141 [INFO] Đủ 2 tin/giờ, chờ 2683 giây
+2026-10-29 22:33:51,343 [INFO] Đủ 2 tin/giờ, chờ 2682 giây
+2026-10-29 22:33:52,506 [INFO] OK  0965422994
+2026-10-29 22:33:52,545 [INFO] Đủ 2 tin/giờ, chờ 2681 giây
+2026-10-29 22:33:53,746 [INFO] Đủ 2 tin/giờ, chờ 2680 giây
+2026-10-29 22:33:54,949 [INFO] Đủ 2 tin/giờ, chờ 2678 giây
+2026-10-29 22:33:56,152 [INFO] Đủ 2 tin/giờ, chờ 2677 giây
+2026-10-29 22:33:57,353 [INFO] Đủ 2 tin/giờ, chờ 2676 giây
+2026-10-29 22:33:58,555 [INFO] Đủ 2 tin/giờ, chờ 2675 giây
+2026-10-29 22:33:59,757 [INFO] Đủ 2 tin/giờ, chờ 2674 giây
+2026-10-29 22:34:00,960 [INFO] Đủ 2 tin/giờ, chờ 2672 giây
+2026-10-29 22:34:02,162 [INFO] Đủ 2 tin/giờ, chờ 2671 giây
+2026-10-29 22:34:03,363 [INFO] Đủ 2 tin/giờ, chờ 2670 giây
+2026-10-29 22:34:04,567 [INFO] Đủ 2 tin/giờ, chờ 2669 giây
+2026-10-29 22:34:05,768 [INFO] Đủ 2 tin/giờ, chờ 2668 giây
+2026-10-29 22:34:06,971 [INFO] Đủ 2 tin/giờ, chờ 2666 giây
+2026-10-29 22:34:08,173 [INFO] Đủ 2 tin/giờ, chờ 2665 giây
+2026-10-29 22:34:09,375 [INFO] Đủ 2 tin/giờ, chờ 2664 giây
+2026-10-29 22:34:10,578 [INFO] Đủ 2 tin/giờ, chờ 2663 giây
+2026-10-29 22:34:11,780 [INFO] Đủ 2 tin/giờ, chờ 2662 giây
+2026-10-29 22:34:12,983 [INFO] Đủ 2 tin/giờ, chờ 2660 giây
+2026-10-29 22:34:14,185 [INFO] Đủ 2 tin/giờ, chờ 2659 giây
+2026-10-29 22:34:15,387 [INFO] Đủ 2 tin/giờ, chờ 2658 giây
+2026-10-29 22:34:16,194 [INFO] OK  0349770424
+2026-10-29 22:34:16,590 [INFO] Đủ 2 tin/giờ, chờ 2657 giây
+2026-10-29 22:34:17,792 [INFO] Đủ 2 tin/giờ, chờ 2656 giây
+2026-10-29 22:34:18,994 [INFO] Đủ 2 tin/giờ, chờ 2654 giây
+2026-10-29 22:34:20,196 [INFO] Đủ 2 tin/giờ, chờ 2653 giây
+2026-10-29 22:34:21,398 [INFO] Đủ 2 tin/giờ, chờ 2652 giây
+2026-10-29 22:34:22,600 [INFO] Đủ 2 tin/giờ, chờ 2651 giây
+2026-10-29 22:34:23,802 [INFO] Đủ 2 tin/giờ, chờ 2650 giây
+2026-10-29 22:34:25,004 [INFO] Đủ 2 tin/giờ, chờ 2648 giây
+2026-10-29 22:34:26,207 [INFO] Đủ 2 tin/giờ, chờ 2647 giây
+2026-10-29 22:34:27,409 [INFO] Đủ 2 tin/giờ, chờ 2646 giây
+2026-10-29 22:34:28,611 [INFO] Đủ 2 tin/giờ, chờ 2645 giây
+2026-10-29 22:34:29,813 [INFO] Đủ 2 tin/giờ, chờ 2644 giây
+2026-10-29 22:34:31,015 [INFO] Đủ 2 tin/giờ, chờ 2642 giây
+2026-10-29 22:34:32,218 [INFO] Đủ 2 tin/giờ, chờ 2641 giây
+2026-10-29 22:34:33,420 [INFO] Đủ 2 tin/giờ, chờ 2640 giây
+2026-10-29 22:34:34,622 [INFO] Đủ 2 tin/giờ, chờ 2639 giây
+2026-10-29 22:34:35,823 [INFO] Đủ 2 tin/giờ, chờ 2638 giây
+2026-10-29 22:34:37,026 [INFO] Đủ 2 tin/giờ, chờ 2636 giây
+2026-10-29 22:34:38,227 [INFO] Đủ 2 tin/giờ, chờ 2635 giây
+2026-10-29 22:34:39,430 [INFO] Đủ 2 tin/giờ, chờ 2634 giây
+2026-10-29 22:34:40,632 [INFO] Đủ 2 tin/giờ, chờ 2633 giây
+2026-10-29 22:34:41,834 [INFO] Đủ 2 tin/giờ, chờ 2632 giây
+2026-10-29 22:34:42,927 [INFO] OK  0971785593
+2026-10-29 22:34:43,036 [INFO] Đủ 2 tin/giờ, chờ 2630 giây
+2026-10-29 22:34:44,238 [INFO] Đủ 2 tin/giờ, chờ 2629 giây
+2026-10-29 22:34:45,439 [INFO] Đủ 2 tin/giờ, chờ 2628 giây
+2026-10-29 22:34:46,641 [INFO] Đủ 2 tin/giờ, chờ 2627 giây
+2026-10-29 22:34:47,844 [INFO] Đủ 2 tin/giờ, chờ 2626 giây
+2026-10-29 22:34:49,047 [INFO] Đủ 2 tin/giờ, chờ 2624 giây
+2026-10-29 22:34:50,249 [INFO] Đủ 2 tin/giờ, chờ 2623 giây
+2026-10-29 22:34:51,451 [INFO] Đủ 2 tin/giờ, chờ 2622 giây
+2026-10-29 22:34:52,653 [INFO] Đủ 2 tin/giờ, chờ 2621 giây
+2026-10-29 22:34:53,855 [INFO] Đủ 2 tin/giờ, chờ 2620 giây
+2026-10-29 22:34:55,058 [INFO] Đủ 2 tin/giờ, chờ 2618 giây
+2026-10-29 22:34:56,260 [INFO] Đủ 2 tin/giờ, chờ 2617 giây
+2026-10-29 22:34:57,462 [INFO] Đủ 2 tin/giờ, chờ 2616 giây
+2026-10-29 22:34:58,664 [INFO] Đủ 2 tin/giờ, chờ 2615 giây
+2026-10-29 22:34:59,866 [INFO] Đủ 2 tin/giờ, chờ 2614 giây
+2026-10-29 22:35:01,067 [INFO] Đủ 2 tin/giờ, chờ 2612 giây
+2026-10-29 22:35:02,269 [INFO] Đủ 2 tin/giờ, chờ 2611 giây
+2026-10-29 22:35:03,472 [INFO] Đủ 2 tin/giờ, chờ 2610 giây
+2026-10-29 22:35:04,674 [INFO] Đủ 2 tin/giờ, chờ 2609 giây
+2026-10-29 22:35:05,877 [INFO] Đủ 2 tin/giờ, chờ 2608 giây
+2026-10-29 22:35:07,082 [INFO] Đủ 2 tin/giờ, chờ 2606 giây
+2026-10-29 22:35:08,285 [INFO] Đủ 2 tin/giờ, chờ 2605 giây
+2026-10-29 22:35:09,487 [INFO] Đủ 2 tin/giờ, chờ 2604 giây
+2026-10-29 22:35:10,689 [INFO] Đủ 2 tin/giờ, chờ 2603 giây
+2026-10-29 22:35:11,892 [INFO] Đủ 2 tin/giờ, chờ 2602 giây
+2026-10-29 22:35:13,095 [INFO] Đủ 2 tin/giờ, chờ 2600 giây
+2026-10-29 22:35:14,297 [INFO] Đủ 2 tin/giờ, chờ 2599 giây
+2026-10-29 22:35:15,499 [INFO] Đủ 2 tin/giờ, chờ 2598 giây
+2026-10-29 22:35:16,701 [INFO] Đủ 2 tin/giờ, chờ 2597 giây
+2026-10-29 22:35:17,904 [INFO] Đủ 2 tin/giờ, chờ 2596 giây
+2026-10-29 22:35:19,106 [INFO] Đủ 2 tin/giờ, chờ 2594 giây
+2026-10-29 22:35:20,307 [INFO] Đủ 2 tin/giờ, chờ 2593 giây
+2026-10-29 22:35:21,511 [INFO] Đủ 2 tin/giờ, chờ 2592 giây
+2026-10-29 22:35:22,714 [INFO] Đủ 2 tin/giờ, chờ 2591 giây
+2026-10-29 22:35:23,917 [INFO] Đủ 2 tin/giờ, chờ 2590 giây
+2026-10-29 22:35:25,118 [INFO] Đủ 2 tin/giờ, chờ 2588 giây
+2026-10-29 22:35:26,320 [INFO] Đủ 2 tin/giờ, chờ 2587 giây
+2026-10-29 22:35:27,524 [INFO] Đủ 2 tin/giờ, chờ 2586 giây
+2026-10-29 22:35:28,726 [INFO] Đủ 2 tin/giờ, chờ 2585 giây
+2026-10-29 22:35:29,928 [INFO] Đủ 2 tin/giờ, chờ 2583 giây
+2026-10-29 22:35:31,131 [INFO] Đủ 2 tin/giờ, chờ 2582 giây
+2026-10-29 22:35:32,333 [INFO] Đủ 2 tin/giờ, chờ 2581 giây
+2026-10-29 22:35:33,535 [INFO] Đủ 2 tin/giờ, chờ 2580 giây
+2026-10-29 22:35:34,745 [INFO] Đủ 2 tin/giờ, chờ 2579 giây
+2026-10-29 22:35:35,947 [INFO] Đủ 2 tin/giờ, chờ 2577 giây
+2026-10-29 22:35:37,149 [INFO] Đủ 2 tin/giờ, chờ 2576 giây
+2026-10-29 22:35:38,355 [INFO] Đủ 2 tin/giờ, chờ 2575 giây
+2026-10-29 22:35:39,557 [INFO] Đủ 2 tin/giờ, chờ 2574 giây
+2026-10-29 22:35:40,760 [INFO] Đủ 2 tin/giờ, chờ 2573 giây
+2026-10-29 22:35:49,811 [ERROR] Lỗi khi gửi 0395504084: Không mở được khung chat của 0395504084
+2026-10-29 22:36:35,554 [INFO] OK  0965422994
+2026-10-29 22:37:01,573 [INFO] OK  0349770424
+2026-10-29 22:37:27,161 [INFO] OK  0971785593
+2026-10-29 22:38:34,163 [ERROR] Lỗi khi gửi 0395504084: Không mở được khung chat của 0395504084
+2026-10-29 22:40:02,885 [INFO] OK  0965422994
+2026-10-29 22:40:26,834 [INFO] OK  0349770424
+2026-10-29 22:40:51,836 [INFO] OK  0971785593
+2026-10-29 22:41:57,508 [ERROR] Lỗi khi gửi 0395504084: Không mở được khung chat của 0395504084

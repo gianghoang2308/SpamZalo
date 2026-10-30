@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Mẫu 5",
+    "text": "Yêu cầu quý khách đóng tiền"
+  },
+  {
+    "name": "Mẫu 6",
+    "text": "Xin chào anh {hoten}, số hợp đồng {mahd}, hạn thanh toán {han} với số tiền {sotien}"
+  },
+  {
+    "name": "Mẫu 3",
+    "text": "Xin chào {hoten}, số hđ{mahd}, hạn thanh toán{han} cần thanh toán gấp số tiền{sotien}."
+  }
+]
